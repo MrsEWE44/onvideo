@@ -1,0 +1,19 @@
+server:
+  port: 8885
+  max-http-header-size: 102400
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.136.129:3307/ovideo
+    username: root
+    password: 123
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+logging:
+  level:
+    com.ov.video.mapper: debug
+
